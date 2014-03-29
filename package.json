@@ -1,0 +1,23 @@
+{
+  "name": "sylva",
+  "version": "0.0.1",
+  "description": "Sylva is a module easy to use for building a socket server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Not Implemented'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanke-guo/sylva.git"
+  },
+  "keywords": [
+    "socket",
+    "server"
+  ],
+  "author": "YANKE Guo <yanke.guo@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanke-guo/sylva/issues"
+  },
+  "homepage": "https://github.com/yanke-guo/sylva"
+}
