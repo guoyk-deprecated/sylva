@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo 'Not Implemented'"
   },
+  directories: {
+    lib: "./lib"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yanke-guo/sylva.git"
