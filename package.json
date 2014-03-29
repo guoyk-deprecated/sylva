@@ -1,6 +1,6 @@
 {
   "name": "sylva",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Sylva is a module easy to use for building a socket server.",
     "main": "index.js",
     "scripts": {
