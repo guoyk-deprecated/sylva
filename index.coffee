@@ -1,2 +1,2 @@
 module.exports = require './lib/sylva'
-module.exports.socket = require './lib/sylva_socket'
+module.exports.SylvaSocket = require './lib/sylva_socket'
