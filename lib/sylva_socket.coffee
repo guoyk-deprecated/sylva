@@ -1,18 +1,21 @@
-assert = require 'assert'
-
 class SylvaSocket
   constructor:(socket)->
-    assert(socket,"Socket cannot be null")
     @socket = socket
     socket.on 'data',@onData
     socket.on 'close',@onClose
     socket.on 'error',@onError
     socket.on 'drain',@onDrain
     socket.on 'timeout',@onTimeout
+    socket.on 'end',@onEnd
 
-    @onBind()
+    @write = @socket.write.bind @socket
+    @end = @socket.end.bind @socket
+
+    @onBind(@socket)
 
   # Callback
+
+  onEnd:()=>
 
   onBind:(socket)=>
 
@@ -25,13 +28,5 @@ class SylvaSocket
   onTimeout:()=>
 
   onDrain:()=>
-
-  # Function
-
-  write:(data,encoding,callback)=>
-    @socket.write data,encoding,callback
-
-  close:(data,encoding)=>
-    @socket.end data,encoding
 
 module.exports = SylvaSocket

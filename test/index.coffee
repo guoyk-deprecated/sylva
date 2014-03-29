@@ -12,4 +12,6 @@ class MySocket extends SylvaSocket
   onError:(error)=>
     log error
 
-Sylva.start 8888,MySocket
+server = Sylva.createServer MySocket
+
+server.listen 8888
