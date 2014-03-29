@@ -10,7 +10,11 @@ class SylvaSocket
     socket.on 'drain',@onDrain
     socket.on 'timeout',@onTimeout
 
+    @onBind()
+
   # Callback
+
+  onBind:(socket)=>
 
   onData:(data)=>
 
