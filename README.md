@@ -1,4 +1,4 @@
-Sylva v0.0.2
+Sylva v0.0.3
 =====
 
 Sylva is a simple module easy to use for building a socket server.
